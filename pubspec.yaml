@@ -10,16 +10,16 @@ dependencies:
     sdk: flutter
   camera: ^0.10.5
   image: ^4.0.17
-  tflite_flutter: ^0.9.0
   path_provider: ^2.0.11
   screenshot: ^2.0.0
   share_plus: ^7.0.0
   shared_preferences: ^2.0.15
   provider: ^6.0.3
+  permission_handler: ^10.2.0
+  # برای پشتیبانی از چند زبان (اختیاری)
   flutter_localizations:
     sdk: flutter
   intl: ^0.18.0
-  permission_handler: ^10.2.0
 
 dev_dependencies:
   flutter_test:
@@ -28,7 +28,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/models/segmentation_model.tflite
-    - assets/clothing/female/
-    - assets/clothing/male/
+  # assets را فعلاً خالی بگذارید تا خطای پیدا نشدن فایل ندهد
+  # assets:
+  #   - assets/models/
+  #   - assets/clothing/
